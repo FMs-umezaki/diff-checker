@@ -1,6 +1,14 @@
 repos:
   - repo: https://github.com/FULL-MARKS-INC/code-checker
-    rev: f04c0e33c77dc9272984f1aa3a78a9c35beb23be
+    rev: 54eda0ca17c445e9fc1ae0bacf1cc00033885ca3
     hooks:
-      - id: todo-checker
+      - id: code-checker
+        stages: [pre-commit]
+        types:
+          - python
+        exclude: promotion_client.py|user_client.py|common_client.py|account_client.py|shop_client.py
+      - id: merged-code-checker
         stages: [pre-merge-commit]
+        types:
+          - python
+        exclude: promotion_client.py|user_client.py|common_client.py|account_client.py|shop_client.py
