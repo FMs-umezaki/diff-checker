@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "diff-checker"
+version = "0.1.0"
+description = ""
+authors = ["FMs-umezaki <umezaki@fullmarks.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+pre-commit = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

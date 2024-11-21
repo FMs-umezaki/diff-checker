@@ -1,0 +1,6 @@
+repos:
+  - repo: https://github.com/FULL-MARKS-INC/code-checker
+    rev: 55b99a4d23b00a2b3aa29d8d7522cc2bcd90807f
+    hooks:
+      - id: todo-checker
+        stages: [pre-merge-commit]

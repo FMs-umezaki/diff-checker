@@ -1,0 +1,1 @@
+- pre-commit install -t pre-commit -t pre-merge-commit
