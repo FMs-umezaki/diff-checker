@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/FULL-MARKS-INC/code-checker
-    rev: b6a7ce26d0cec84c68d64237e59d99eee4ded8cf
+    rev: d60d3b4a6b06bc1a4c84aac24856de0c2a151f5c
     hooks:
       - id: code-checker
         stages: [pre-commit]
